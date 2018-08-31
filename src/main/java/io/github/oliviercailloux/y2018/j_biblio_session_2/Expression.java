@@ -18,7 +18,17 @@ public class Expression
 	private Work work;
 	private List<Manifestation> manifestations;
 	
-	public Expression(String title,String form,String langage, String summarization,String context,String criticalResponse,String useRestrictions,Instant date,boolean revisability,Work work, String source)
+	public Expression(String title,
+					  String form,
+					  String langage, 
+					  String summarization,
+					  String context,
+					  String criticalResponse,
+					  String useRestrictions,
+					  Instant date,
+					  boolean revisability,
+					  Work work, 
+					  String source)
 	{
 		this.origin = new Origin(Instant.now(),source);
 		

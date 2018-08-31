@@ -22,7 +22,12 @@ public class Person
 	private Origin origin;
 	
 	/** Person constructor. **/
-	public Person(Name authorityName, List<Name> otherNames, String title, Instant date, String designation, String source) 
+	public Person(Name authorityName, 
+				  List<Name> otherNames, 
+				  String title, 
+				  Instant date, 
+				  String designation, 
+				  String source) 
 	{
 		this.origin = new Origin(Instant.now(), source);
 		this.works = new ArrayList<Work>(); 

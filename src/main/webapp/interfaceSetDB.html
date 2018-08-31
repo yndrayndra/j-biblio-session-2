@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Interface Create Client</title>
+	<link rel="stylesheet" href="/j-biblio-session-2/scripts/jquery-ui.css">
+</head>
+<body>
+<script src="/j-biblio-session-2/scripts/jquery-3.3.1.min.js"></script>
+<script src="/j-biblio-session-2/scripts/jquery-ui.min.js"></script>
+	<form name="formulaire" action="SetDB1" method="post">
+			<div>
+			<select class="select-type" id="type" name="type">
+			<option value="person" >Person</option>
+			<option value="work">Work</option>
+			<option value="manifestation" >Manifestation</option>
+			<option value="expression" >Expression</option>
+			<option value="item">Item</option>
+			</select>
+				<!--input type="search" name="search" placeholder="id to search"/ -->
+			</div>
+			<div class="div-person ">
+				<table>
+					<tr>
+						<td>Authority Name</td>
+						<td><input type="text" name="authorityName"/></td>
+					</tr>
+					<tr>
+						<td>Others Names</td>
+						<td><input type="text" name="otherNames" placeholder="other names"/></td>
+					</tr>
+					<tr>
+						<td>Title</td>
+						<td><input type="text" name="title"/></td>
+					</tr>
+					<tr>
+						<td>Designation</td>
+						<td><input type="text" name="designation"/></td>
+					</tr>
+					<tr>
+						<td>Date</td>
+						<td><input type="text" class="datepicker" name="date"/></td>
+					</tr>
+				</table>
+
+
+					  <br/>
+			</div>
+			<div class="div-work hide">
+				<table>
+					<tr>
+						<td>Title</td>
+						<td><input type="text" name="titleWork"/></td>
+					</tr>
+					<tr>
+						<td>Form</td>
+						<td><input type="text" name="formWork"/></td>
+					</tr>
+					<tr>
+						<td>Intended Audience</td>
+						<td><input type="text" name="intendedAudiance"/></td>
+					</tr>
+					<tr>
+						<td>DistinguishingCharacteristic</td>
+						<td><input type="text" name="distinguishingCharacteristic"/></td>
+					</tr>
+					<tr>
+						<td>IntendedTermination</td>
+						<td><input type="text" name="intendedTermination"/></td>
+					</tr>
+					<tr>
+						<td>Date</td>
+						<td><input type="text" name="dateWork" class="datepicker" /></td>
+					</tr>
+				</table>
+			</div>
+			<div class="div-expr ">
+				<table>
+					<tr>
+						<td>Title</td>
+						<td><input type="text" name="titleExpr"/></td>
+					</tr>
+					<tr>
+						<td>Form</td>
+						<td><input type="text" name="formExpr"/></td>
+					</tr>
+					<tr>
+						<td>Language</td>
+						<td><input type="text" name="language"/></td>
+					</tr>
+					<tr>
+						<td>Summarization</td>
+						<td><input type="text" name="summarization"/></td>
+					</tr>
+					<tr>
+						<td>Context</td>
+						<td><input type="text" name="context"/></td>
+					</tr>
+					<tr>
+						<td>Critical Response</td>
+						<td><input type="text" name="criticalResponse"/></td>
+					</tr>
+					<tr>
+						<td>Use Restrictions</td>
+						<td><input type="text" name="useRestrictions"/></td>
+					</tr>
+					<tr>
+						<td>Date</td>
+						<td><input type="text" name="dateExpr" class="datepicker" /></td>
+					</tr>
+					<tr>
+						<td>Revisability</td>
+						<td><input type="text" name="revisability"/></td>
+					</tr>
+				</table>
+			</div>
+			<div class="div-manif ">
+				<table>
+					<tr>
+						<td>Title</td>
+						<td><input type="text" name="titleManif"/></td>
+					</tr>
+					<tr>
+						<td>Responsibilities</td>
+						<td><input type="text" name="responsibilitiesStr"/></td>
+					</tr>
+					<tr>
+						<td>Edition</td>
+						<td><input type="text" name="edition"/></td>
+					</tr>
+					<tr>
+						<td>Place Of Publication</td>
+						<td><input type="text" name="placeOfPublication"/></td>
+					</tr>
+					<tr>
+						<td>Publisher</td>
+						<td><input type="text" name="publisher"/></td>
+					</tr>
+					<tr>
+						<td>Date Of Publication</td>
+						<td><input type="text" name="dateOfPublication" class="datepicker" /></td>
+					</tr>
+					<tr>
+						<td>Fabricator</td>
+						<td><input type="text" name="fabricator"/></td>
+					</tr>
+					<tr>
+						<td>Serie Statement</td>
+						<td><input type="text" name="serieStatement"/></td>
+					</tr>
+					<tr>
+						<td>Manifestation Id</td>
+						<td><input type="number" name="manifestationId"/></td>
+					</tr>
+					<tr>
+						<td>Source For Acquisition</td>
+						<td><input type="text" name="sourceForAcquisition"/></td>
+					</tr>
+					<tr>
+						<td>Terms Of Availability</td>
+						<td><input type="text" name="termsOfAvailability"/></td>
+					</tr>
+					<tr>
+						<td>Access Restrictions</td>
+						<td><input type="text" name="accessRestrictionsManif"/></td>
+					</tr>
+				</table>
+			</div>
+			<div class="div-item ">
+				<table>
+					<tr>
+						<td>Item Identifier</td>
+						<td><input type="number" name="itemIdentifier"/></td>
+					</tr>
+					<tr>
+						<td>Fingerprint</td>
+						<td><input type="text" name="fingerprint"/></td>
+					</tr>
+						<td>Item Provenance</td>
+						<td><input type="text" name="itemProvenance"/></td>
+					</tr>
+					</tr>
+						<td>Marks</td>
+						<td><input type="text" name="marksStr"/></td>
+					</tr>
+					<tr>
+						<td>Item Condition</td>
+						<td><input type="text" name="itemCondition"/></td>
+					</tr>
+					<tr>
+						<td>Access Restrictions</td>
+						<td><input type="text" name="accessRestrictionsItem"/></td>
+					</tr>
+				</table>
+			</div>
+		<br/>
+		<input type="submit" value="ajouter" name="submit" id="ajouter"/>	
+		<input type="submit" value="lister" name="submit" id="lister"/>			
+	</form>
+
+
+<script>
+	$( function() {
+	    $( ".datepicker" ).datepicker({ dateFormat: 'yy-mm-dd' });
+	} );
+	$(document).ready(function () {
+        $('.div-manif').hide();
+        $('.div-work').hide();
+        $('.div-person').show();
+        $('.div-expr').hide();
+        $('.div-item').hide();
+    });
+    $('.select-type').on('change', function(){
+        $('.div-manif').hide();
+        $('.div-work').hide();
+        $('.div-person').hide();
+        $('.div-expr').hide();
+        $('.div-item').hide();
+        console.log('selected');
+        var selected = $(this).find(':selected').val();
+        switch (selected) {
+            case 'person':               
+                $('.div-person').show();
+                break;
+            case 'work':                
+                $('.div-work').show();
+                break;
+            case 'manifestation':
+                $('.div-manif').show();
+                break;
+            case 'expression':
+                $('.div-expr').show();
+                break;
+            case 'item':
+                $('.div-item').show();
+                break;
+        }
+
+    });
+</script>
+</body>
+</html>

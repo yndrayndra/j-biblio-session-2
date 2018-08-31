@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+	<persistence-unit name="j-biblio-session-2">
+		<class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.Expression</class>
+		<class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.Item</class>
+		<class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.Manifestation</class>
+		<class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.Person</class>
+		<class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.Workentity</class>	
+	</persistence-unit>
+</persistence>

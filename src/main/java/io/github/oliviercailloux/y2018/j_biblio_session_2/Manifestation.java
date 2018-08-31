@@ -38,9 +38,22 @@ public class Manifestation {
 	}
 	
  /** Manifestation constructor. **/
-	public Manifestation(String title, List<String> responsibilities, String edition, String placeOfPublication,
-			String publisher, Instant dateOfPublication, String fabricator, String serieStatement, int manifestationId, String sourceForAcquisition, 
-			String termsOfAvailability, String accessRestrictions, String typeface, int typeSize, Expression expression, String source) {
+	public Manifestation(String title, 
+				   		 List<String> responsibilities, 
+				   		 String edition, 
+				   		 String placeOfPublication,
+				   		 String publisher, 
+				   		 Instant dateOfPublication, 
+				   		 String fabricator, 
+				   		 String serieStatement, 
+				   		 int manifestationId, 
+				   		 String sourceForAcquisition, 
+				   		 String termsOfAvailability, 
+				   		 String accessRestrictions, 
+				   		 String typeface, 
+				   		 int typeSize, 
+				   		 Expression expression, 
+				   		 String source) {
 		
 		this.expression = Optional.of(expression);
 		

@@ -22,9 +22,15 @@ public class Item {
 	
 	private Manifestation manifestation;
 	
-	public Item(int itemIdentifier, String fingerprint, String itemProvenance, List<String> marks,
-			List<String> exhibitionHistory, String itemCondition, String accessRestrictions, 
-			Manifestation manifestation, String source) {	
+	public Item(int itemIdentifier, 
+				String fingerprint, 
+				String itemProvenance, 
+				List<String> marks,
+				List<String> exhibitionHistory, 
+				String itemCondition, 
+				String accessRestrictions, 
+				Manifestation manifestation, 
+				String source) {	
 		
 		this.manifestation = manifestation;
 		

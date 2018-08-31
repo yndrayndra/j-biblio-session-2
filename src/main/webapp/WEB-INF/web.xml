@@ -12,9 +12,31 @@
 		<servlet-name>ClientCreate</servlet-name>
 		<servlet-class>io.github.oliviercailloux.y2018.j_biblio_session_2.web.ClientCreate</servlet-class>
 	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SetDB1</display-name>
+		<servlet-name>SetDB1</servlet-name>
+		<servlet-class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.servlets.SetDB1</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SetDBVar</display-name>
+		<servlet-name>SetDBVar</servlet-name>
+		<servlet-class>io.github.oliviercailloux.y2018.j_biblio_session_2.jpa.servlets.SetDBVar</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>ClientCreate</servlet-name>
 		<url-pattern>/ClientCreate</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetDB1</servlet-name>
+		<url-pattern>/SetDB1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SetDBVar</servlet-name>
+		<url-pattern>/SetDBVar</url-pattern>
 	</servlet-mapping>
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
